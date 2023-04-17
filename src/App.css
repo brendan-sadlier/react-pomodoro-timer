@@ -1,0 +1,16 @@
+:root {
+  --red: #eb5353;
+  --green: #36ae7c;
+}
+
+body {
+  background-color: #1b262c;
+  color: #eee;
+}
+
+main {
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
