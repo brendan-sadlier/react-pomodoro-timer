@@ -12,9 +12,7 @@ Pomodoro Timer is a simple timer that help user be more productive.
 
 ### Built With
 
-![](https://skillicons.dev/icons?i=react,js,html,css,bootstrap)
-
-## Demo
+![](https://skillicons.dev/icons?i=react,js,html,css)
 
 ## Run Locally
 
@@ -30,8 +28,23 @@ Go to the project directory
   cd react-pomodoro-timer
 ```
 
+Install dependencies
+
+```bash
+  npm install --save react-circular-progressbar
+  npm install react-slider
+```
+
 Start the server
 
 ```bash
   npm start
 ```
+
+## Color Reference
+
+| Color      | Hex                                                              |
+| ---------- | ---------------------------------------------------------------- |
+| Background | ![#1b262c](https://via.placeholder.com/10/1b262c?text=+) #1b262c |
+| Blue       | ![#3282b8](https://via.placeholder.com/10/3282b8?text=+) #3282b8 |
+| Green      | ![#32a287](https://via.placeholder.com/10/32a287?text=+) #32a287 |
