@@ -76,7 +76,7 @@ function Timer() {
                 text={minutes + ':' + seconds}
                 styles={buildStyles({
                     textColor: '#fff',
-                    pathColor: mode == 'work' ? red : green,
+                    pathColor: mode === 'work' ? red : green,
                     tailColor: '#efefef'
             })}/>
             <div style={{marginTop:'20px'}}>
