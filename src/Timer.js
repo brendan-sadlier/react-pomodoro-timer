@@ -1,7 +1,7 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { useContext, useState, useEffect, useRef } from 'react';
-import { SettingsContext } from './SettingsContext';
+import SettingsContext from './SettingsContext';
 import PlayButton from './PlayButton';
 import PauseButton from './PauseButton';
 import SettingsButton from './SettingsButton';
@@ -86,7 +86,7 @@ function Timer() {
                 }
             </div>
             <div style={{marginTop:'20px'}}>
-                <SettingsButton onClick={() => settings.info.setShowSettings(true)} />
+                <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
             </div>
         </div>
     );
