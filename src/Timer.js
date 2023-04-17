@@ -6,8 +6,8 @@ import PlayButton from './PlayButton';
 import PauseButton from './PauseButton';
 import SettingsButton from './SettingsButton';
 
-const red = "#eb5353";
-const green = "#36ae7c;"
+const blue = "#3282B8";
+const green = "#36ae7c;";
 
 function Timer() {
 
@@ -39,7 +39,7 @@ function Timer() {
             secondsLeftRef.current = nextSeconds;
         }
 
-        secondsLeftRef.current =settingsInfo.workMinutes * 60;
+        secondsLeftRef.current = settingsInfo.workMinutes * 60;
         setSecondsLeft(secondsLeftRef.current);
 
         const interval = setInterval(() => {
@@ -76,17 +76,20 @@ function Timer() {
                 text={minutes + ':' + seconds}
                 styles={buildStyles({
                     textColor: '#fff',
-                    pathColor: mode === 'work' ? red : green,
-                    tailColor: '#efefef'
+                    pathColor: mode === 'work' ? blue : green,
+                    trailColor: 'rgba(255,255,255,.2)'
             })}/>
             <div style={{marginTop:'20px'}}>
                 {isPaused
-                    ?  <PlayButton  onClick={() => {setIsPaused(false); isPausedRef.current = false}}/>
-                    : <PauseButton onClick={() => {setIsPaused(true);  isPausedRef.current = true}}/>
+                    ? <PlayButton  onClick={() => { setIsPaused(false); isPausedRef.current = false }}/>
+                    : <PauseButton onClick={() => { setIsPaused(true);  isPausedRef.current = true }}/>
                 }
             </div>
             <div style={{marginTop:'20px'}}>
                 <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
+            </div>
+            <div className='footer'>
+                Created By <a className='link' href="https://github.com/brendan-sadlier/react-pomodoro-timer">Brendan Sadlier</a>
             </div>
         </div>
     );

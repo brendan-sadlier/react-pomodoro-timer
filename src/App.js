@@ -7,7 +7,7 @@ import SettingsContext from './SettingsContext';
 function App() {
 
   const [showSettings, setShowSettings] = useState(false);
-  const [workMinutes, setWorkMinutes] = useState(45);
+  const [workMinutes, setWorkMinutes] = useState(.5);
   const [breakMinutes, setBreakMinutes] = useState(15);
 
   return (
@@ -22,11 +22,6 @@ function App() {
       }}>
         {showSettings ? <Settings /> : <Timer />}
       </SettingsContext.Provider>
-
-      <div className='footer'>
-        Created By Brendan Sadlier
-      </div>
-
     </main>
   );
 }

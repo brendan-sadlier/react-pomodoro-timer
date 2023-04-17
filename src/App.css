@@ -1,5 +1,5 @@
 :root {
-  --red: #eb5353;
+  --blue: #3282b8;
   --green: #36ae7c;
 }
 
@@ -13,4 +13,48 @@ main {
   max-width: 340px;
   margin: 0 auto;
   text-align: center;
+}
+
+button {
+  background-color: transparent;
+  color: #3282b8;
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+button.with-text {
+  width: auto;
+  background-color: #1b262c;
+  border-radius: 10px;
+  padding: 10px, 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
+button.with-text svg {
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.footer {
+  margin-top: 150px;
+}
+
+.link {
+  text-decoration: none;
+  color: #3282b8;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
